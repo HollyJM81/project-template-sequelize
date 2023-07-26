@@ -7,11 +7,11 @@ A template starter-kit for projects utilising Sequelize.
 navigate to parent folder in CLI
 
 ```bash
- git clone https://github.com/HollyJM81/project_template_sequelize.git
+ git clone https://github.com/HollyJM81/project-template-sequelize.git
 ```
 
 ```bash
-mv project_template_sequelize >>new_project_name<<
+mv project-template-sequelize >>new_project_name<<
 ```
 
 ```bash
