@@ -22,7 +22,7 @@ git init
 ```
 
 ```bash
-git remote add origin https://github.com/HollyJM81/>>new_project_name<<.git
+git remote set-url origin https://github.com/HollyJM81/>>new_project_name<<.git
 ```
 
 ```bash
