@@ -59,7 +59,7 @@ npm i -S express
 ```
 
 ```bash
-npm i pg
+npm i -S pg
 ```
 
 ```bash
