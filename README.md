@@ -1,18 +1,17 @@
 # project-template-sequelize
 
-A template starter-kit for projects utilising Sequelize.
+\***\*REPLACE THIS README WHEN YOU'RE READY\*\*** A template starter-kit for
+projects utilising Sequelize.
 
 ## Installation
 
 navigate to parent folder in CLI
 
 ```bash
- git clone https://github.com/HollyJM81/project-template-sequelize.git
+ git clone https://github.com/HollyJM81/project-template-sequelize.git >>new_project_name<<
 ```
 
-```bash
-mv project-template-sequelize >>new_project_name<<
-```
+create new github repo with >>new_project_name<<
 
 ```bash
 cd >>new_project_name<<
@@ -23,7 +22,7 @@ git init
 ```
 
 ```bash
-git remote add origin https://github.com/HollyJM81/INSERT_NEW_PROJECT_NAME_HERE.git
+git remote add origin https://github.com/HollyJM81/>>new_project_name<<.git
 ```
 
 ```bash
@@ -51,19 +50,22 @@ touch index.js
 ```
 
 ```bash
-touch README.md
+npm init
 ```
 
 ```bash
-npm init
+npx eslint --init
 ```
+
+(Answer the questions to configure it for common js that runs in node. You
+should end up with a .eslintrc.json file)
 
 ```bash
 npm install --save sequelize
 ```
 
 ```bash
-npm install express
+npm i -S express
 ```
 
 ```bash
@@ -102,29 +104,44 @@ touch .env.test
 code .
 ```
 
-Add node_modules, .env and .env.test to your .gitignore file in VS code
+Add a temporary start script to package.json of " nodemon index.js"
 
-Add a pretest script to your package.json. Set the command to: node
-scripts/create-database.js test.
+```bash
+npm start
+```
 
-Add a test script to your package.json file: mocha tests/\*_/_.js --exit
---recursive --timeout 60000 --file ./tests/test-setup.js
+to test.
 
-Add a posttest script, set the command to: node scripts/drop-database.js test.
+Add a get route to / in your app.js. It should return a 200 status code and a
+Hello World string. Run your app and send a GET request to localhost:4000 in
+postman. If you get a Hello World then you know that your app is working.
 
-Add a prestart script to your package.json. Set the command to node
-scripts/create-database.js.
+---
 
-Add a start script to your package.json file with the following command: nodemon
--r dotenv/config index.js.
-
-Setup .env and .env.test file with the following variables:
+Setup .env and .env.test file with the following values:
 
     PGPASSWORD=>>my_password<<
     PGDATABASE=>>project_name<<
     PGUSER=postgres
     PGHOST=localhost
     PGPORT=5432
-    PORT=4000
+    PORT=3000
 
-change PGDATABASE in .env.test to a different name
+Change PGDATABASE in .env.test to a different name
+
+Make a file called .prettierrc.json, and populate it with:
+
+{ "trailingComma": "es5", "tabWidth": 2, "semi": true, "singleQuote": true }
+
+You can now give the command
+
+```bash
+npx prettier --write .
+```
+
+to style all files before each commit.
+
+Change function and variable names in src and test files, as directed in
+comments
+
+Change scripts to include pretest, test, posttest, prestart, and start...
