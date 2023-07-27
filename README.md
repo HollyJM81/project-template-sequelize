@@ -120,8 +120,8 @@ Add a start script to your package.json file with the following command: nodemon
 
 Setup .env and .env.test file with the following variables:
 
-    PGPASSWORD=my_password
-    PGDATABASE=project_name
+    PGPASSWORD=>>my_password<<
+    PGDATABASE=>>project_name<<
     PGUSER=postgres
     PGHOST=localhost
     PGPORT=5432
