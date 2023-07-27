@@ -61,7 +61,7 @@ npx eslint --init
 should end up with a .eslintrc.json file)
 
 ```bash
-npm install --save sequelize
+npm i -S sequelize
 ```
 
 ```bash
@@ -69,27 +69,27 @@ npm i -S express
 ```
 
 ```bash
-npm install pg
+npm i pg
 ```
 
 ```bash
-npm install -D dotenv
+npm i -D dotenv
 ```
 
 ```bash
-npm install -D nodemon
+npm i -D nodemon
 ```
 
 ```bash
-npm install -D mocha
+npm i -D mocha
 ```
 
 ```bash
-npm install -D chai
+npm i -D chai
 ```
 
 ```bash
-npm install -D supertest
+npm i -D supertest
 ```
 
 ```bash
