@@ -40,15 +40,7 @@ git commit -m "first commit"
 ```
 
 ```bash
-touch .gitignore
-```
-
-```bash
-touch index.js
-```
-
-```bash
-npm init
+npm init y
 ```
 
 ```bash
@@ -131,27 +123,24 @@ Make a file called .prettierrc.json, and populate it with:
 { "trailingComma": "es5", "tabWidth": 2, "semi": true, "singleQuote": true }
 
 You can now give the command
-
 ```bash
 npx prettier --write .
 ```
-
 to style all files before each commit.
 
 Change function and variable names in src and test files, as directed in
 comments
 
 Change scripts (replace [asterix] with \*) to:
-
 ...
-
 "scripts": { "prestart": "node scripts/create-database.js", "start": "nodemon -r
 dotenv/config index.js", "pretest": "node scripts/create-database.js test",
 "test": "mocha tests/[asterix][asterix]/[asterix].js --exit --recursive
 --timeout 60000 --file ./tests/test-setup.js", "posttest": "node
 scripts/drop-database.js" }
-
 ...
+
+Update Description in package.json
 
 ```bash
 npm test
