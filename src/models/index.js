@@ -1,4 +1,5 @@
 const Sequelize = require("sequelize");
+const BookModel = require("./books.js");
 
 const { PGDATABASE, PGUSER, PGPASSWORD, PGHOST, PGPORT } = process.env;
 
@@ -9,9 +10,9 @@ const setupDatabase = () => {
 		dialect: "postgres",
 		logging: false,
 	});
-
+	const Book = BookModel(connection, Sequelize);
 	connection.sync({ alter: true });
-	return {};
+	return { Book };
 };
 
 module.exports = setupDatabase();

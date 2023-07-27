@@ -1,4 +1,4 @@
-// scripts/create-database.js
+// scripts / create - database.js;
 
 // require the pg package
 const { Client } = require("pg");
