@@ -144,4 +144,20 @@ to style all files before each commit.
 Change function and variable names in src and test files, as directed in
 comments
 
-Change scripts to include pretest, test, posttest, prestart, and start...
+Change scripts (replace [asterix] with \*) to:
+
+...
+
+"scripts": { "prestart": "node scripts/create-database.js", "start": "nodemon -r
+dotenv/config index.js", "pretest": "node scripts/create-database.js test",
+"test": "mocha tests/[asterix][asterix]/[asterix].js --exit --recursive
+--timeout 60000 --file ./tests/test-setup.js", "posttest": "node
+scripts/drop-database.js" }
+
+...
+
+```bash
+npm test
+```
+
+Start writing your tests and code!
