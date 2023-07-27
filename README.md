@@ -25,6 +25,8 @@ git init
 git remote set-url origin https://github.com/HollyJM81/>>new_project_name<<.git
 ```
 
+make repo in github of same name
+
 ```bash
 git remote -v
 ```
