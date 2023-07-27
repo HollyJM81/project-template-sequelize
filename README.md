@@ -40,10 +40,6 @@ git commit -m "first commit"
 ```
 
 ```bash
-git push origin main
-```
-
-```bash
 touch .gitignore
 ```
 
