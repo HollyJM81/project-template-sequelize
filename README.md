@@ -125,5 +125,6 @@ Setup .env and .env.test file with the following variables:
     PGUSER=postgres
     PGHOST=localhost
     PGPORT=5432
+    PORT=4000
 
 change PGDATABASE in .env.test to a different name

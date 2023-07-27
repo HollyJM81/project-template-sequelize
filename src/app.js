@@ -1,11 +1,13 @@
 const express = require("express");
-const { Book } = require("./models");
+// *** CHANGE ***
+// const { >>Item<< } = require("./models");
 const app = express();
 
 app.use(express.json());
 
-app.post("/books", (req, res) => {
-	Book.create(req.body).then((book) => res.status(201).json(book));
-});
+// *** CHANGE ***
+// app.post("/>>items<<", (req, res) => {
+// 	>>Item<<.create(req.body).then((>>item<<) => res.status(201).json(>>item<<));
+// });
 
 module.exports = app;

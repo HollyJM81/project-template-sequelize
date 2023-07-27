@@ -5,5 +5,6 @@ module.exports = (sequelize, DataTypes) => {
 		genre: DataTypes.STRING,
 		isbn: DataTypes.STRING,
 	};
-	return sequelize.define("Book", schema);
+	// *** CHANGE ***
+	// return sequelize.define("item string. eg book", schema);
 };
